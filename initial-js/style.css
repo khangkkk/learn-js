@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: rgba(73, 230, 236, 0.349);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: aliceblue;
+    transition: 1s ease;
+    width: 70%;
+    max-width: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 10rem 2rem rgb(0 0 0 / 0.25);
+}
+
+#txt-name {
+    width: 50%;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0;
+}
+
+#start-game h1,
+#end-game h1 {
+    margin-top: 3%;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.game-title {
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: aquamarine;
+}
+
+.question-section {
+    background-color: #99c2ff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.result-section {
+    align-items: center;
+    text-align: center;
+    background-color: #ffd480;
+    padding: 4% 4% 4% 4%;
+    font-size: 30px;
+}
+
+.answer-section {
+    padding: 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    background: #e4d2d2;
+}
+
+button {
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+}
+
+#btn-restart,
+#btn-save,
+#btn-crown,
+#btn-home-l {
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 1rem 1rem 2rem;
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 107, 226);
+}
+
+#btn-start,
+#btn-home,
+#btn-crown {
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 1rem 1rem 0.5rem 12.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 107, 226);
+}
+
+button:hover {
+    background-color: rgba(28, 231, 187, 0.25);
+}
+
+#btn-start:hover,
+#btn-restart:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2rem 0 red;
+    transition: transform 150ms;
+    transform: scale(1.15);
+    background-color: red;
+}
+
+#btn-save:hover,
+#btn-home:hover,
+#btn-home-l:hover,
+#btn-crown:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 2rem 0 rgb(108, 98, 160);
+    transition: transform 150ms;
+    transform: scale(1.15);
+    background-color: rgb(118, 196, 233);
+}
+
+#btn-true {
+    margin-left: 6rem;
+    padding: 3rem;
+}
+
+#btn-false {
+    padding: 3rem;
+    margin-left: 2.5rem;
+}
+
+#icon-true {
+    color: green;
+}
+
+#icon-false {
+    color: red;
+}
+
+#start-game,
+#end-game {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+}
+
+#highScore,
+#in-game,
+#end-game {
+    display: none;
+}
+
+#start-game>p {
+    margin: 2rem auto;
+}
+
+#timer {
+    display: block;
+    text-align: left;
+    height: 0.5rem;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#progress {
+    transition: ease;
+    height: 100%;
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #btn-true {
+        margin-left: 4rem;
+        padding: 1rem;
+    }
+
+    #btn-false {
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+}
+
+#message {
+    font-size: 1.5rem;
+}
+
+#highScore {
+    flex-direction: column;
+    text-align: center;
+}
+
+#btn-dir-r {
+    flex-direction: column;
+}
+
+#highScoreList li {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+
+@-webkit-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: rgb(147, 224, 147);
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-moz-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: rgb(147, 224, 147);
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-o-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: rgb(147, 224, 147);
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: rgb(147, 224, 147);
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+#leaderboard {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite;
+    -o-animation: my 700ms infinite;
+    animation: my 700ms infinite;
+}

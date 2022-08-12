@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Math Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="start-game">
+            <h1>Are you ready?</h1>
+            <p>Enter your name</p>
+            <input type="text" id="txt-name" placeholder="Your name" />          
+            <a id="btn-start" onclick="restart()">
+               <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+            <a id="btn-crown" onclick="viewHighScore()">&#128081;</a>
+        </div>
+
+        <div id="highScore">
+            <p id="leaderboard">Leaderboard</p>
+            <div>
+                <ul id="highScoreList">helo
+                    <li></li>
+                </ul>
+            </div>
+            <a id="btn-home" onclick="backHome()">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        </div>
+
+        <div id="in-game">
+            <div class="top-section">
+                <h1 class="title">Math Quiz</h1>
+                <div class="game-title">
+                    <p>Score : <span id="score">0</span></p>
+                    <p>Level :
+                        <span id="level">1</span>
+                    </p>
+                </div>
+                <div id="timer">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="question-section">
+                <h1 id="question">1+1</h1>
+            </div>
+            <h3 class="result-section" id="result"></h3>
+            <div class="answer-section">
+                <button id="btn-true" value="true">
+                    <ion-icon id="icon-true" name="checkmark-outline"></ion-icon>
+                </button>
+                <button id="btn-false" value="false">
+                    <ion-icon id="icon-false" name="close-sharp"></ion-icon>
+                </button>
+            </div>
+            <div id="user-name">
+                name
+            </div>
+        </div>
+
+        <div id="end-game">
+            <h1>Game over</h1>
+            <h1>Your total score was : <span id="final-score">0</span></h1>
+            <p id="message"></p>
+            <div id="btn-dir-r">
+                <button id="btn-save" onclick="saveHighScore(event)"><ion-icon name="save-outline"></ion-icon></button>
+                <a id="btn-restart" onclick="restart()">
+                    <ion-icon name="reload-outline"></ion-icon>
+                </a>
+                <a id="btn-home-l" onclick="backHome()">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
